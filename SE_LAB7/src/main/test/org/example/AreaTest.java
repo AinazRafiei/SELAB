@@ -7,7 +7,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class AreaTest {
 
     @Test
-    void main(int height, int width) {
+    void main() {
+        int height = 3;
+        int width = 5;
         MyRectangle rectangle = new MyRectangle(height, width);
         assertEquals(height*width, rectangle.getArea());
     }

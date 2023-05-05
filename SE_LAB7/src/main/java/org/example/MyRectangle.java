@@ -28,6 +28,6 @@ public class MyRectangle {
     }
 
     public int getArea() {
-        return this.getHeight() * this.getHeight();
+        return this.getHeight() * this.getWidth();
     }
 }
