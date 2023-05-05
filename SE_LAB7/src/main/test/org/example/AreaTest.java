@@ -9,6 +9,6 @@ class AreaTest {
     @Test
     void main(int height, int width) {
         MyRectangle rectangle = new MyRectangle(height, width);
-        assertEquals(6, rectangle.getArea);
+        assertEquals(height*width, rectangle.getArea());
     }
 }
