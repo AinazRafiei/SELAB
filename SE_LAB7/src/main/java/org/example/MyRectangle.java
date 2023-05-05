@@ -1,30 +1,31 @@
 package org.example;
 
-public class MyRectangle {
+public class MyRectangle extends MySquare {
 
 
-    private int height;
-    private int width;
+
+    private int secondSide;
 
     public MyRectangle(int height, int width) {
-        this.height = height;
-        this.width = width;
+        super(height);
+        this.secondSide = width;
+
     }
 
     public void setHeight(int height) {
-        this.height = height;
+        super.setSide(height);
     }
 
     public void setWidth(int width) {
-        this.width = width;
+        this.secondSide = width;
     }
 
     public int getHeight() {
-        return height;
+        return super.getSide();
     }
 
     public int getWidth() {
-        return width;
+        return secondSide;
     }
 
     public int getArea() {
