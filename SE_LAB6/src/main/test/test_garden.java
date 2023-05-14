@@ -23,6 +23,12 @@ public class test_garden {
         assertEquals(iranianFlower.getName(), "khatmi");
         assertEquals(japaneseTree.getName(), "Japanese tree");
         assertEquals(japaneseFlower.getName(), "Japanese flower");
+
+        // test clone - copy
+        assertEquals(iranianFlower.clone().getName(), iranianFlower.getName());
+        assertEquals(iranianTree.clone().getName(), iranianTree.getName());
+        assertEquals(japaneseFlower.clone().getName(), japaneseFlower.getName());
+        assertEquals(japaneseTree.clone().getName(), japaneseTree.getName());
     }
 
 }
