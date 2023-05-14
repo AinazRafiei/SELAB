@@ -11,4 +11,9 @@ public class IranianFlower extends AbstractFlower {
     public String getName() {
         return super.name;
     }
+
+    @Override
+    public IranianFlower clone(){
+        return new IranianFlower(this.name);
+    }
 }

@@ -11,4 +11,9 @@ public class JapaneseTree extends AbstractTree {
     public String getName() {
         return super.name;
     }
+
+    @Override
+    public JapaneseTree clone(){
+        return new JapaneseTree(this.name);
+    }
 }

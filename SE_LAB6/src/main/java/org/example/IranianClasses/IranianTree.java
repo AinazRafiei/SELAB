@@ -12,4 +12,9 @@ public class IranianTree extends AbstractTree {
     public String getName() {
         return super.name;
     }
+
+    @Override
+    public IranianTree clone() {
+        return new IranianTree(this.name);
+    }
 }

@@ -12,4 +12,9 @@ public class JapaneseCreatoer extends AbstractGardenCreator {
     public JapaneseFlower createFlower(String x) {
         return new JapaneseFlower(x);
     }
+
+    @Override
+    public JapaneseCreatoer clone() {
+        return new JapaneseCreatoer();
+    }
 }

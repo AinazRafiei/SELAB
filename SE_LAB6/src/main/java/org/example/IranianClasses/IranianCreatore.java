@@ -12,4 +12,10 @@ public class IranianCreatore extends AbstractGardenCreator {
     public IranianFlower createFlower(String x) {
         return new IranianFlower(x);
     }
+
+    @Override
+    public IranianCreatore clone(){
+        return new IranianCreatore();
+    }
+
 }

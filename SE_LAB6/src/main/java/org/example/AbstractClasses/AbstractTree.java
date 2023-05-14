@@ -6,4 +6,6 @@ public abstract class AbstractTree {
         name = x;
     }
     abstract public String getName();
+
+    abstract public Object clone();
 }

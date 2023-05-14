@@ -11,4 +11,9 @@ public class JapaneseFlower extends AbstractFlower {
     public String getName() {
         return super.name;
     }
+
+    @Override
+    public JapaneseFlower clone(){
+        return new JapaneseFlower(this.name);
+    }
 }

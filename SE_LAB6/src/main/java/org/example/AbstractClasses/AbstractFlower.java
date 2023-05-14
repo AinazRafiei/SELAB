@@ -7,4 +7,5 @@ public abstract class AbstractFlower {
         this.name = x;
     }
     abstract public String getName();
+    abstract public Object clone();
 }
