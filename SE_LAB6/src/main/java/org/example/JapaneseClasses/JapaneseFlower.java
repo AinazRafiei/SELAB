@@ -1,6 +1,8 @@
-package org.example;
+package org.example.JapaneseClasses;
 
-public class JapaneseFlower extends AbstractFlower{
+import org.example.AbstractClasses.AbstractFlower;
+
+public class JapaneseFlower extends AbstractFlower {
     public JapaneseFlower(String x) {
         super(x);
     }

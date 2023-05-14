@@ -1,5 +1,10 @@
 
-import org.example.*;
+import org.example.IranianClasses.IranianCreatore;
+import org.example.IranianClasses.IranianFlower;
+import org.example.IranianClasses.IranianTree;
+import org.example.JapaneseClasses.JapaneseCreatoer;
+import org.example.JapaneseClasses.JapaneseFlower;
+import org.example.JapaneseClasses.JapaneseTree;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

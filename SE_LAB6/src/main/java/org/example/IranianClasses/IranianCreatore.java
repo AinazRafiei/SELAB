@@ -1,6 +1,8 @@
-package org.example;
+package org.example.IranianClasses;
 
-public class IranianCreatore extends AbstractGardenCreator{
+import org.example.AbstractClasses.AbstractGardenCreator;
+
+public class IranianCreatore extends AbstractGardenCreator {
     @Override
     public  IranianTree createTree(String x) {
         return new IranianTree(x);

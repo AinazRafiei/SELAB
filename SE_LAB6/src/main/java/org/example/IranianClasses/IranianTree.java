@@ -1,6 +1,8 @@
-package org.example;
+package org.example.IranianClasses;
 
-public class IranianTree extends AbstractTree{
+import org.example.AbstractClasses.AbstractTree;
+
+public class IranianTree extends AbstractTree {
 
     public IranianTree(String x) {
         super(x);

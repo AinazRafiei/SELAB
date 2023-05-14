@@ -1,4 +1,4 @@
-package org.example;
+package org.example.AbstractClasses;
 
 public abstract class AbstractGardenCreator {
     abstract public AbstractTree createTree(String x);

@@ -1,6 +1,8 @@
-package org.example;
+package org.example.JapaneseClasses;
 
-public class JapaneseTree extends AbstractTree{
+import org.example.AbstractClasses.AbstractTree;
+
+public class JapaneseTree extends AbstractTree {
     public JapaneseTree(String x) {
         super(x);
     }
