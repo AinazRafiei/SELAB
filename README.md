@@ -25,3 +25,7 @@ Principles of object-oriented design (SOLID)
 ## Assignment_6
 
 Object-oriented design patterns
+
+## Assignment_7
+
+Refactoring
