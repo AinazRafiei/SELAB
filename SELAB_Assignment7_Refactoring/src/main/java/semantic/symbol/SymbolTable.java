@@ -16,6 +16,7 @@ public class SymbolTable {
     private Memory mem;
     private SymbolType lastType;
 
+
     public SymbolTable(Memory memory) {
         mem = memory;
         klasses = new HashMap<>();
