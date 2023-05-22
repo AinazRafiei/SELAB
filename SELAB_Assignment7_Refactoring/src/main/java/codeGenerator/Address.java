@@ -8,14 +8,11 @@ public class Address {
     public int num;
     public TypeAddress Type;
     public varType varType;
-    public AddressType addressType;
-
 
     public Address(int num, varType varType, TypeAddress Type) {
         this.num = num;
         this.Type = Type;
         this.varType = varType;
-        this.addressType =
     }
 
     public Address(int num, varType varType) {
@@ -24,33 +21,33 @@ public class Address {
         this.varType = varType;
     }
 
-    public String toString() {
-        switch (Type) {
-            case Direct:
-                return num + "";
-            case Indirect:
-                return "@" + num;
-            case Imidiate:
-                return "#" + num;
-        }
-        return num + "";
-    }
+//    public String toString() {
+//        switch (Type) {
+//            case Direct:
+//                return num + "";
+//            case Indirect:
+//                return "@" + num;
+//            case Imidiate:
+//                return "#" + num;
+//        }
+//        return num + "";
+//    }
 }
-abstract  class AddressType extends  Address{
-    public int num;
 
-    public AddressType(int num) {
-        this.num = num;
-    }
+abstract class address_type{}
+
+abstract  class AddressType extends  Address{
+
+    public AddressType(int num, varType varType, TypeAddress Type) {super(num, varType, Type);}
+    public AddressType(int num, varType varType) {super(num, varType);}
 
     public abstract String toString();
 
 }
 class Direct extends AddressType{
 
-    public Direct(int num) {
-        super(num);
-    }
+    public Direct(int num, varType varType, TypeAddress Type) {super(num, varType, Type);}
+    public Direct(int num, varType varType) {super(num, varType);}
 
     @Override
 
@@ -60,9 +57,9 @@ class Direct extends AddressType{
 }
 class Indirect extends AddressType{
 
-    public Indirect(int num) {
-        super(num);
-    }
+    public Indirect(int num, varType varType, TypeAddress Type) {super(num, varType, Type);}
+    public Indirect(int num, varType varType) {super(num, varType);}
+
     @Override
     public String toString() {
         return "@" + num;
@@ -70,9 +67,9 @@ class Indirect extends AddressType{
 }
 class Imidiate extends AddressType{
 
-    public Imidiate(int num) {
-        super(num);
-    }
+    public Imidiate(int num, varType varType, TypeAddress Type) {super(num, varType, Type);}
+    public Imidiate(int num, varType varType) {super(num, varType);}
+
 
     @Override
     public String toString() {
