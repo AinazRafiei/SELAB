@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-import Log.Log;
+import log.Log;
 import codegenerator.CodeGenerator;
 import errorhandler.ErrorHandler;
 import scanner.lexicalAnalyzer;
@@ -99,6 +99,8 @@ public class Parser {
 //                    parsStack.pop();
             }
         }
-        if (!ErrorHandler.hasError) cg.printMemory();
+        if (!ErrorHandler.hasError) {
+            cg.printMemory();
+        }
     }
 }

@@ -1,6 +1,6 @@
 package codegenerator;
 
-import Log.Log;
+import log.Log;
 import errorhandler.ErrorHandler;
 import scanner.token.Token;
 import semantic.symbol.Symbol;
