@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Stack;
 
 import Log.Log;
-import codeGenerator.CodeGenerator;
-import errorHandler.ErrorHandler;
+import codegenerator.CodeGenerator;
+import errorhandler.ErrorHandler;
 import scanner.lexicalAnalyzer;
 import scanner.token.Token;
 
