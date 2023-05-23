@@ -7,7 +7,33 @@ package codegenerator;
 public class Address {
     public int num;
     public TypeAddress Type;
+
     public varType varType;
+
+
+    public void setNum(int num) {
+        this.num = num;
+    }
+
+    public void setType(TypeAddress type) {
+        Type = type;
+    }
+
+    public void setVarType(codegenerator.varType varType) {
+        this.varType = varType;
+    }
+
+    public int getNum() {
+        return num;
+    }
+
+    public TypeAddress getType() {
+        return Type;
+    }
+
+    public codegenerator.varType getVarType() {
+        return varType;
+    }
 
     public Address(int num, varType varType, TypeAddress Type) {
         this.num = num;
@@ -22,15 +48,15 @@ public class Address {
     }
 
     public String toString() {
-        switch (Type) {
+        switch (getType()) {
             case Direct:
-                return num + "";
+                return getNum() + "";
             case Indirect:
-                return "@" + num;
+                return "@" + getNum();
             case Imidiate:
-                return "#" + num;
+                return "#" + getNum();
             case default:
-                return num + "";
+                return getNum() + "";
         }
     }
 }
@@ -53,7 +79,7 @@ class Direct extends AddressType{
     @Override
 
     public String toString() {
-        return num + "";
+        return getNum() + "";
     }
 }
 class Indirect extends AddressType{
@@ -63,7 +89,7 @@ class Indirect extends AddressType{
 
     @Override
     public String toString() {
-        return "@" + num;
+        return "@" + getNum();
     }
 }
 class Imidiate extends AddressType{
@@ -74,6 +100,6 @@ class Imidiate extends AddressType{
 
     @Override
     public String toString() {
-        return "#" + num;
+        return "#" + getNum();
     }
 }
