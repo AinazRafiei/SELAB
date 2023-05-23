@@ -5,6 +5,7 @@ import errorHandler.ErrorHandler;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class SymbolTable {
@@ -143,7 +144,7 @@ public class SymbolTable {
         public int codeAddress;
         public Map<String, Symbol> parameters;
         public Map<String, Symbol> localVariable;
-        private ArrayList<String> orderdParameters;
+        private List<String> orderdParameters;
         public int callerAddress;
         public int returnAddress;
         public SymbolType returnType;
