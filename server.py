@@ -15,7 +15,6 @@ while True:
 
     # Close the connection with the client
     c.close()
-
     # Breaking once connection closed
     break
 s.close()
